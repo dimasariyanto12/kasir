@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="cetak" targetNamespace="http://tempuri.org/cetak.xsd" xmlns:mstns="http://tempuri.org/cetak.xsd" xmlns="http://tempuri.org/cetak.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="kasirrrConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="kasirrrConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AplikasiKasirrrr.Properties.Settings.GlobalReference.Default.kasirrrConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_cetakTableAdapter" GeneratorDataComponentClassName="vw_cetakTableAdapter" Name="vw_cetak" UserDataComponentName="vw_cetakTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="kasirrrConnectionString (Settings)" DbObjectName="kasirrr.dbo.vw_cetak" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT notrx, tgl, nama, Barang, harga, qty, total, SubTotal, tunai, kembali, Kasir FROM dbo.vw_cetak</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="notrx" DataSetColumn="notrx" />
+              <Mapping SourceColumn="tgl" DataSetColumn="tgl" />
+              <Mapping SourceColumn="nama" DataSetColumn="nama" />
+              <Mapping SourceColumn="Barang" DataSetColumn="Barang" />
+              <Mapping SourceColumn="harga" DataSetColumn="harga" />
+              <Mapping SourceColumn="qty" DataSetColumn="qty" />
+              <Mapping SourceColumn="total" DataSetColumn="total" />
+              <Mapping SourceColumn="SubTotal" DataSetColumn="SubTotal" />
+              <Mapping SourceColumn="tunai" DataSetColumn="tunai" />
+              <Mapping SourceColumn="kembali" DataSetColumn="kembali" />
+              <Mapping SourceColumn="Kasir" DataSetColumn="Kasir" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="cetak" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="cetak" msprop:Generator_UserDSName="cetak">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_cetak" msprop:Generator_TableClassName="vw_cetakDataTable" msprop:Generator_TableVarName="tablevw_cetak" msprop:Generator_TablePropName="vw_cetak" msprop:Generator_RowDeletingName="vw_cetakRowDeleting" msprop:Generator_RowChangingName="vw_cetakRowChanging" msprop:Generator_RowEvHandlerName="vw_cetakRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_cetakRowDeleted" msprop:Generator_UserTableName="vw_cetak" msprop:Generator_RowChangedName="vw_cetakRowChanged" msprop:Generator_RowEvArgName="vw_cetakRowChangeEvent" msprop:Generator_RowClassName="vw_cetakRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="notrx" msprop:Generator_ColumnVarNameInTable="columnnotrx" msprop:Generator_ColumnPropNameInRow="notrx" msprop:Generator_ColumnPropNameInTable="notrxColumn" msprop:Generator_UserColumnName="notrx" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tgl" msprop:Generator_ColumnVarNameInTable="columntgl" msprop:Generator_ColumnPropNameInRow="tgl" msprop:Generator_ColumnPropNameInTable="tglColumn" msprop:Generator_UserColumnName="tgl" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="nama" msprop:Generator_ColumnVarNameInTable="columnnama" msprop:Generator_ColumnPropNameInRow="nama" msprop:Generator_ColumnPropNameInTable="namaColumn" msprop:Generator_UserColumnName="nama" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Barang" msprop:Generator_ColumnVarNameInTable="columnBarang" msprop:Generator_ColumnPropNameInRow="Barang" msprop:Generator_ColumnPropNameInTable="BarangColumn" msprop:Generator_UserColumnName="Barang" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="harga" msprop:Generator_ColumnVarNameInTable="columnharga" msprop:Generator_ColumnPropNameInRow="harga" msprop:Generator_ColumnPropNameInTable="hargaColumn" msprop:Generator_UserColumnName="harga" type="xs:decimal" minOccurs="0" />
+              <xs:element name="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:int" minOccurs="0" />
+              <xs:element name="total" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_UserColumnName="total" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SubTotal" msprop:Generator_ColumnVarNameInTable="columnSubTotal" msprop:Generator_ColumnPropNameInRow="SubTotal" msprop:Generator_ColumnPropNameInTable="SubTotalColumn" msprop:Generator_UserColumnName="SubTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="tunai" msprop:Generator_ColumnVarNameInTable="columntunai" msprop:Generator_ColumnPropNameInRow="tunai" msprop:Generator_ColumnPropNameInTable="tunaiColumn" msprop:Generator_UserColumnName="tunai" type="xs:decimal" minOccurs="0" />
+              <xs:element name="kembali" msprop:Generator_ColumnVarNameInTable="columnkembali" msprop:Generator_ColumnPropNameInRow="kembali" msprop:Generator_ColumnPropNameInTable="kembaliColumn" msprop:Generator_UserColumnName="kembali" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Kasir" msprop:Generator_ColumnVarNameInTable="columnKasir" msprop:Generator_ColumnPropNameInRow="Kasir" msprop:Generator_ColumnPropNameInTable="KasirColumn" msprop:Generator_UserColumnName="Kasir" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

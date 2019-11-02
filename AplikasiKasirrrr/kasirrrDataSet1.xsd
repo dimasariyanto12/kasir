@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="kasirrrDataSet1" targetNamespace="http://tempuri.org/kasirrrDataSet1.xsd" xmlns:mstns="http://tempuri.org/kasirrrDataSet1.xsd" xmlns="http://tempuri.org/kasirrrDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="kasirrrConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="kasirrrConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AplikasiKasirrrr.Properties.Settings.GlobalReference.Default.kasirrrConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Vw_penjualanTableAdapter" GeneratorDataComponentClassName="Vw_penjualanTableAdapter" Name="Vw_penjualan" UserDataComponentName="Vw_penjualanTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="kasirrrConnectionString (Settings)" DbObjectName="kasirrr.dbo.Vw_penjualan" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT notrx, tgl, SubTotal, Modal, Untung FROM dbo.Vw_penjualan</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="notrx" DataSetColumn="notrx" />
+              <Mapping SourceColumn="tgl" DataSetColumn="tgl" />
+              <Mapping SourceColumn="SubTotal" DataSetColumn="SubTotal" />
+              <Mapping SourceColumn="Modal" DataSetColumn="Modal" />
+              <Mapping SourceColumn="Untung" DataSetColumn="Untung" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="kasirrrDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="kasirrrDataSet1" msprop:Generator_UserDSName="kasirrrDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Vw_penjualan" msprop:Generator_TableClassName="Vw_penjualanDataTable" msprop:Generator_TableVarName="tableVw_penjualan" msprop:Generator_TablePropName="Vw_penjualan" msprop:Generator_RowDeletingName="Vw_penjualanRowDeleting" msprop:Generator_RowChangingName="Vw_penjualanRowChanging" msprop:Generator_RowEvHandlerName="Vw_penjualanRowChangeEventHandler" msprop:Generator_RowDeletedName="Vw_penjualanRowDeleted" msprop:Generator_UserTableName="Vw_penjualan" msprop:Generator_RowChangedName="Vw_penjualanRowChanged" msprop:Generator_RowEvArgName="Vw_penjualanRowChangeEvent" msprop:Generator_RowClassName="Vw_penjualanRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="notrx" msprop:Generator_ColumnVarNameInTable="columnnotrx" msprop:Generator_ColumnPropNameInRow="notrx" msprop:Generator_ColumnPropNameInTable="notrxColumn" msprop:Generator_UserColumnName="notrx" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tgl" msprop:Generator_ColumnVarNameInTable="columntgl" msprop:Generator_ColumnPropNameInRow="tgl" msprop:Generator_ColumnPropNameInTable="tglColumn" msprop:Generator_UserColumnName="tgl" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SubTotal" msprop:Generator_ColumnVarNameInTable="columnSubTotal" msprop:Generator_ColumnPropNameInRow="SubTotal" msprop:Generator_ColumnPropNameInTable="SubTotalColumn" msprop:Generator_UserColumnName="SubTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Modal" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnModal" msprop:Generator_ColumnPropNameInRow="Modal" msprop:Generator_ColumnPropNameInTable="ModalColumn" msprop:Generator_UserColumnName="Modal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Untung" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnUntung" msprop:Generator_ColumnPropNameInRow="Untung" msprop:Generator_ColumnPropNameInTable="UntungColumn" msprop:Generator_UserColumnName="Untung" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

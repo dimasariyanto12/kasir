@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DB5B5C6A-E765-4CF1-9BA5-349CBB730815}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AplikasiKasirrrr</RootNamespace>
+    <AssemblyName>AplikasiKasirrrr</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarangDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BarangDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cariBrg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cariBrg.Designer.cs">
+      <DependentUpon>cariBrg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cariPlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cariPlg.Designer.cs">
+      <DependentUpon>cariPlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cetak.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cetak.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CetakStruk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CetakStruk.Designer.cs">
+      <DependentUpon>CetakStruk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="DBConnection.cs" />
+    <Compile Include="frmBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBarang.Designer.cs">
+      <DependentUpon>frmBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCetak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCetak.Designer.cs">
+      <DependentUpon>frmCetak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLaporan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLaporan.Designer.cs">
+      <DependentUpon>frmLaporan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPelanggan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPelanggan.Designer.cs">
+      <DependentUpon>frmPelanggan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSuplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSuplier.Designer.cs">
+      <DependentUpon>frmSuplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransaksi.Designer.cs">
+      <DependentUpon>frmTransaksi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasir.Designer.cs">
+      <DependentUpon>Kasir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kasirrrDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kasirrrDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kasirrrDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kasirrrDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lprnBarangDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lprnBarangDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PelangganDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PelangganDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SuplierDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SuplierDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tmbBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tmbBarang.Designer.cs">
+      <DependentUpon>tmbBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tmbPelanggan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tmbPelanggan.Designer.cs">
+      <DependentUpon>tmbPelanggan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tmbSuplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tmbSuplier.Designer.cs">
+      <DependentUpon>tmbSuplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tmbUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tmbUsers.Designer.cs">
+      <DependentUpon>tmbUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsersDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cariBrg.resx">
+      <DependentUpon>cariBrg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cariPlg.resx">
+      <DependentUpon>cariPlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cetak.rdlc" />
+    <EmbeddedResource Include="CetakStruk.resx">
+      <DependentUpon>CetakStruk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBarang.resx">
+      <DependentUpon>frmBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCetak.resx">
+      <DependentUpon>frmCetak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLaporan.resx">
+      <DependentUpon>frmLaporan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPelanggan.resx">
+      <DependentUpon>frmPelanggan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSuplier.resx">
+      <DependentUpon>frmSuplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransaksi.resx">
+      <DependentUpon>frmTransaksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasir.resx">
+      <DependentUpon>Kasir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanBarsng.rdlc" />
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="tmbBarang.resx">
+      <DependentUpon>tmbBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tmbPelanggan.resx">
+      <DependentUpon>tmbPelanggan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tmbSuplier.resx">
+      <DependentUpon>tmbSuplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tmbUsers.resx">
+      <DependentUpon>tmbUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BarangDataSet.xsc">
+      <DependentUpon>BarangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BarangDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BarangDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BarangDataSet.xss">
+      <DependentUpon>BarangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="cetak.xsc">
+      <DependentUpon>cetak.xsd</DependentUpon>
+    </None>
+    <None Include="cetak.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cetak.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cetak.xss">
+      <DependentUpon>cetak.xsd</DependentUpon>
+    </None>
+    <None Include="kasirrrDataSet.xsc">
+      <DependentUpon>kasirrrDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kasirrrDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kasirrrDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kasirrrDataSet.xss">
+      <DependentUpon>kasirrrDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kasirrrDataSet1.xsc">
+      <DependentUpon>kasirrrDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="kasirrrDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kasirrrDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kasirrrDataSet1.xss">
+      <DependentUpon>kasirrrDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="lprnBarangDataSet.xsc">
+      <DependentUpon>lprnBarangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="lprnBarangDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>lprnBarangDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="lprnBarangDataSet.xss">
+      <DependentUpon>lprnBarangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PelangganDataSet.xsc">
+      <DependentUpon>PelangganDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PelangganDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PelangganDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PelangganDataSet.xss">
+      <DependentUpon>PelangganDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SuplierDataSet.xsc">
+      <DependentUpon>SuplierDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SuplierDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SuplierDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SuplierDataSet.xss">
+      <DependentUpon>SuplierDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UsersDataSet.xsc">
+      <DependentUpon>UsersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UsersDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UsersDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UsersDataSet.xss">
+      <DependentUpon>UsersDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

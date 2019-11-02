@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="lprnBarangDataSet" targetNamespace="http://tempuri.org/lprnBarangDataSet.xsd" xmlns:mstns="http://tempuri.org/lprnBarangDataSet.xsd" xmlns="http://tempuri.org/lprnBarangDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="kasirrrConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="kasirrrConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AplikasiKasirrrr.Properties.Settings.GlobalReference.Default.kasirrrConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LaporanBarangTableAdapter" GeneratorDataComponentClassName="LaporanBarangTableAdapter" Name="LaporanBarang" UserDataComponentName="LaporanBarangTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="kasirrrConnectionString (Settings)" DbObjectName="kasirrr.dbo.LaporanBarang" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Kode Barang], Nama, [Harga Beli], [Harga Jual], Suplier FROM dbo.LaporanBarang</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Kode Barang" DataSetColumn="Kode Barang" />
+              <Mapping SourceColumn="Nama" DataSetColumn="Nama" />
+              <Mapping SourceColumn="Harga Beli" DataSetColumn="Harga Beli" />
+              <Mapping SourceColumn="Harga Jual" DataSetColumn="Harga Jual" />
+              <Mapping SourceColumn="Suplier" DataSetColumn="Suplier" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="lprnBarangDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="lprnBarangDataSet" msprop:Generator_UserDSName="lprnBarangDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LaporanBarang" msprop:Generator_TableClassName="LaporanBarangDataTable" msprop:Generator_TableVarName="tableLaporanBarang" msprop:Generator_TablePropName="LaporanBarang" msprop:Generator_RowDeletingName="LaporanBarangRowDeleting" msprop:Generator_RowChangingName="LaporanBarangRowChanging" msprop:Generator_RowEvHandlerName="LaporanBarangRowChangeEventHandler" msprop:Generator_RowDeletedName="LaporanBarangRowDeleted" msprop:Generator_UserTableName="LaporanBarang" msprop:Generator_RowChangedName="LaporanBarangRowChanged" msprop:Generator_RowEvArgName="LaporanBarangRowChangeEvent" msprop:Generator_RowClassName="LaporanBarangRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Kode_x0020_Barang" msprop:Generator_ColumnVarNameInTable="columnKode_Barang" msprop:Generator_ColumnPropNameInRow="Kode_Barang" msprop:Generator_ColumnPropNameInTable="Kode_BarangColumn" msprop:Generator_UserColumnName="Kode Barang" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nama" msprop:Generator_ColumnVarNameInTable="columnNama" msprop:Generator_ColumnPropNameInRow="Nama" msprop:Generator_ColumnPropNameInTable="NamaColumn" msprop:Generator_UserColumnName="Nama" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Harga_x0020_Beli" msprop:Generator_ColumnVarNameInTable="columnHarga_Beli" msprop:Generator_ColumnPropNameInRow="Harga_Beli" msprop:Generator_ColumnPropNameInTable="Harga_BeliColumn" msprop:Generator_UserColumnName="Harga Beli" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Harga_x0020_Jual" msprop:Generator_ColumnVarNameInTable="columnHarga_Jual" msprop:Generator_ColumnPropNameInRow="Harga_Jual" msprop:Generator_ColumnPropNameInTable="Harga_JualColumn" msprop:Generator_UserColumnName="Harga Jual" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Suplier" msprop:Generator_ColumnVarNameInTable="columnSuplier" msprop:Generator_ColumnPropNameInRow="Suplier" msprop:Generator_ColumnPropNameInTable="SuplierColumn" msprop:Generator_UserColumnName="Suplier" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
